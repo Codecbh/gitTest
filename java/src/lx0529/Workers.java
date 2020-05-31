@@ -3,7 +3,7 @@ package lx0529;
 /**
  * @ProjectName: cbh.homework.cn
  * @Package: lx0529
- * @ClassName: Workers
+ * @ClassName: lx0529.Workers
  * @Author: Administrator
  * @Description: 员工
  * @Date: 2020/5/29 16:04 * @Version: 1.0
