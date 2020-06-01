@@ -1,3 +1,5 @@
+import java.util.Calendar;
+
 /**
  * @ProjectName: gitTest
  * @Package: PACKAGE_NAME
@@ -8,7 +10,10 @@
  */
 public class main {
     public static void main(String[] args) {
-        System.out.println("123456");
-        System.out.println("654321");
+        Calendar c = Calendar.getInstance();
+        System.out.println(c.get(Calendar.YEAR)+"年"+(c.get(Calendar.MONTH)+1)+"月");
+        System.out.println(Calendar.DAY_OF_WEEK);
+        System.out.println(Calendar.getAvailableCalendarTypes());
+        System.out.println(Calendar.DAY_OF_WEEK);
     }
 }
