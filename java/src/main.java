@@ -1,4 +1,5 @@
-import java.util.Calendar;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * @ProjectName: gitTest
@@ -10,10 +11,32 @@ import java.util.Calendar;
  */
 public class main {
     public static void main(String[] args) {
-        Calendar c = Calendar.getInstance();
-        System.out.println(c.get(Calendar.YEAR)+"年"+(c.get(Calendar.MONTH)+1)+"月");
-        System.out.println(Calendar.DAY_OF_WEEK);
-        System.out.println(Calendar.getAvailableCalendarTypes());
-        System.out.println(Calendar.DAY_OF_WEEK);
+        File file = new File("test.txt");
+//        创建
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+        System.out.println("文件大小："+file.length()+"字节");
+        System.out.println("文件名称："+file.getName());
+        System.out.println("文件相对路径名称："+file.getPath());
+        System.out.println("文件绝对路径名称："+file.getAbsolutePath());
+       /* //删除
+        if (file.exists()) {
+            file.delete();
+            if (file.isFile()) {
+                System.out.println("是文件");
+            }
+            if (file.isDirectory()) {
+                System.out.println("是目录");
+            }
+        } else {
+            System.out.println("不存在");
+        }
+*/
     }
 }

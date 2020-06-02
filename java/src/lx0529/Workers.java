@@ -5,7 +5,7 @@ package lx0529;
  * @Package: lx0529
  * @ClassName: lx0529.Workers
  * @Author: Administrator
- * @Description: 员工
+ * @Description: 员工 控制台
  * @Date: 2020/5/29 16:04 * @Version: 1.0
  */
 public class Workers implements Comparable<Workers> {
